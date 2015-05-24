@@ -1,3 +1,5 @@
+#setwd("C:/Users/Sarvo/Documents/R/Projects/Getting-and-Cleaning-Data")
+
 #Load column names
 column_names<-read.table("features.txt")
 #Filter columns (only mean and std measurements)
@@ -56,5 +58,5 @@ row.names(colmeans)<-NULL
 colmeans<-cbind(subject.activity, colmeans)
 
 #Save the two tidy datasets
-write.csv(dataset, file="peer_task1.csv")
-write.csv(colmeans, file="peer_task2.csv")
+write.csv(dataset, file="peer_task1.txt")
+write.csv(colmeans, file="peer_task2.txt")
